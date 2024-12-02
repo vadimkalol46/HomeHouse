@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header__nav-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.header__nav-link,
+.header__nav-dropdown-link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: 'PR';
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+}
+
+.header__nav-dropdown-link {
+    padding: 12px 30px;
+}
+
+.header__nav-dropdown-link:hover {
+    background: #41a28e;
+    color: white;
+}
+
+.line {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header__nav-li {
+    position: relative;
+}
+
+.header__nav-li:hover   .header__nav-dropdown {
+    opacity: 1;
+    z-index: 1;
+}
+
+.header__nav-dropdown {
+    z-index: -1;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+    width: 160px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 16px;
+    opacity: 0;
+}
+
+.header__nav {
+    background: #fff;
+    padding: 25px 0;
+}
+
+.header__nav-form {
+    display: flex;
+    gap: 4px;
+}
+
+.header__nav-input {
+    border: 1px solid #41a28e;
+    max-width: 180px;
+    width: 100%;
+    height: 28px;
+    padding: 0 12px;
+    outline: none;
+}
+
+.header__nav-input::placeholder {
+    font-family: 'RR';
+    font-weight: 400;
+    font-size: 14px;
+    color: #4b4848;
+}
+
+.header__nav-btn {
+    width: 28px;
+    height: 28px;
+    background: #41a28e;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__content {
+    background: url(../images/content.jpg) no-repeat center /cover;
+    background-attachment: fixed;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.header__content-title {
+    font-family: 'PR';
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 16px 60px;
+}
+
+.header__content-text {
+    font-family: 'PR';
+    font-weight: 400;
+    font-size: 22px;
+    color: #fff;
+    text-shadow: 6px 6px 5px  rgba(0, 0, 0, 0.38);
+}
+.header__content-link {
+    width: 131px;
+    height: 59px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PR';
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+    transition: 300ms;
+}
+
+.header__content-link:hover {
+    background: #41a28e;
+    color: #fff;
+}
+
+.commerce {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.commerce__item {
+    max-width: 255px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.commerce__item:hover  .commerce__item-title {
+    bottom: 0;
+}
+
+.commerce__item-img {
+    display: block;
+}
+.commerce__item-title {
+    transition: 300ms;
+    background: rgba(75, 72, 72, 0.7);
+    font-family: 'PR';
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    right: 0;
+}
+
+.commerce__box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 52px;
+}
+
+.commerce__info,
+.product__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.commerce__info-title,
+.product__info-title {
+    font-family: 'PR';
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    color: #000;
+}
+.commerce__info-text,
+.product__info-text {
+    font-family: 'PR';
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #666;
+    max-width: 496px;
+    width: 100%;
+}
+
+.intro {
+    background: url(../images/intro.jpg) no-repeat center /cover;
+    background-attachment: fixed;
+    padding-top: 120px;
+    padding-bottom: 112px;
+}
+
+.intro__box-text {
+    font-family: 'PR';
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}
+.intro__box-title {
+    font-family: 'PR';
+    font-weight: 400;
+    font-size: 50px;
+    color: #fff;
+    margin-top: 3px;
+    margin-bottom: 22px;
+}
+
+.intro__box-link {
+    max-width: 190px;
+    width: 100%;
+    height: 53px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PR';
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+    transition: 300ms;
+}
+
+.intro__box-link:hover {
+    background: #41a28e;
+    color: white;
+}
+
+.product {
+    padding: 50px 0;
+}
+.product__item {
+    max-width: 255px;
+    width: 100%;
+}
+
+.product__item-top {
+    position:relative ;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.product__item-top:hover .product__item-panel {
+    bottom: 0;
+}
+
+.product__item-panel {
+    transition: 300ms;
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 17px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product__item-add {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: "PR";
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+}
+
+.product__item-icons {
+    display: flex;
+    gap: 23px;
+}
+
+.product__item-img {
+    display: block;
+}
+
+.product__item-bottom {
+    margin-top: 43px;
+}
+
+.product__item-title {
+    font-family: "  PR  ";
+    font-weight: 400;
+    font-size: 22px;
+    color: #000;
+}
+
+.product__item-price {
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+    margin-top: 6px;
+}
+
+.product__box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.product__item-discount{
+    color: #666;
+    text-decoration: line-through;
+    margin-right: 15px;
+}
+
+.out, 
+.sale {
+    position: relative;
+}
+
+.out::before {
+    content: 'OUT OF STOCK';
+}
+
+.sale::before {
+    content: 'SALE';
+}
+
+.out::before, 
+.sale::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 10px 18px;
+    display: block;
+    background: #4b484b;
+    font-family: 'RR';
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+}
+
+.footer__box {
+    background: #000;
+    padding: 36px 0;
+}
+
+.footer__box-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__box-item {
+    max-width: 255px;
+    width: 100%;
+}
+
+.footer__box-item-title {
+    font-family: "RR";
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.footer__box-item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__box-item-link {
+   font-family: "RR";
+   font-weight: 400;
+   font-size: 14px;
+   color: #fff;
+}
+
+.footer__box-item-social {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.footer__box-item-social-links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+       font-family: "RR";
+       font-weight: 400;
+       font-size: 14px;
+       color: #fff;
+}
+
+.footer__box-item-form {
+    display: flex;
+}
+
+.footer__box-item-input {
+    max-width: 200px;
+    width: 100%;
+    height: 44px;
+    background: #fff;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+}
+
+.footer__box-item-input::placeholder {
+       font-family: "RR";
+       font-weight: 400;
+       font-size: 14px;
+       color: #909090;
+}
+
+.footer__box-item-btn {
+    width: 55px;
+    height: 45px;
+    background: #41a28e;
+    border: none;
+           font-family: "RR";
+           font-weight: 400;
+           font-size: 16px;
+           color: #fff;
+}
+
+.footer__box-item-text {
+  font-family: "RR";
+  font-weight: 400;
+ font-size: 14px;
+ color: #fff;
+ margin: 20px 0;
+}
+
+.footer__box-item-cards {
+    display: flex;
+    gap: 25px;
+}
+
+.footer__author {
+    background: #121212;
+    padding: 40px 0 ;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__author-title {
+      font-family: "RR";
+      font-weight: 400;
+      font-size: 18px;
+      color: #666;
+}
+
+.footer__author-name {
+    text-shadow: 0 0 4px #e52d27;
+}

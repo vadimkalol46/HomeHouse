@@ -1,0 +1,36 @@
+@media(max-width:1140px) {
+    .commerce__box, 
+    .product__box, 
+    .footer__box-items
+    {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+}
+@media (max-width:1000px) {
+    .header__nav-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width:650px){
+   .header__content {
+        height: 400px;
+    }
+    .header__content-title {
+        font-size: 30px;
+        padding: 5px 15px ;
+    }
+    .header__nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .commerce__info-title,
+    .intro__box-title,
+    .product__info-title {
+        font-size: 28px;
+    }
+}
